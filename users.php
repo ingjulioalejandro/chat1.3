@@ -35,6 +35,7 @@
       </div>
       <div class="create-group">
         <a href="create_group.php" class="create-group-btn">Create New Group</a>
+        <a href="http://localhost/Plug_SharingApp/index.php" class="create-group-btn upload-files-btn">Upload Files</a>
       </div>
     </section>
   </div>

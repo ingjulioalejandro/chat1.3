@@ -12,7 +12,7 @@
         if(isset($_FILES['attachment']) && $_FILES['attachment']['error'] == 0){
             $allowed = array('jpg', 'jpeg', 'png', 'gif', 'pdf', 'doc', 'docx', 'xls', 'xlsx', 'txt', 'csv', 'zip', 'rar', 'mp3', 'mp4', 'avi', 'mov');
             $filename = $_FILES['attachment']['name'];
-            $file_name = $filename; // Store original filename
+            $file_name = $filename;
             $ext = pathinfo($filename, PATHINFO_EXTENSION);
             if(in_array(strtolower($ext), $allowed)){
                 $new_name = time() . '_' . $filename;

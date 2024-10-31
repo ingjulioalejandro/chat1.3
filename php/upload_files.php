@@ -13,7 +13,7 @@ if(isset($_FILES['file']['name'])){
         $upload_dir = "uploads/" . $new_file_name;
         
         if(move_uploaded_file($file_tmp, $upload_dir)){
-            // Guardar la referencia del archivo en la base de datos
+
             $outgoing_id = $_SESSION['unique_id'];
             $room_id = mysqli_real_escape_string($conn, $_POST['room_id']);
             $sql = "INSERT INTO messages (outgoing_msg_id, room_id, msg, sent_at, file_name) 

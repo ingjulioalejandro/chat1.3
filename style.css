@@ -25,7 +25,7 @@ body{
               0 32px 64px -48px rgba(0,0,0,0.5);
 }
 
-/* Login & Signup Form CSS Start */
+
 .form{
   padding: 25px 30px;
 }
@@ -115,7 +115,7 @@ body{
 }
 
 
-/* Users List CSS Start */
+
 .users{
   padding: 25px 30px;
 }
@@ -256,28 +256,62 @@ body{
 
 .users-list a .status-dot {
   font-size: 12px;
-  color: #468669;
+  color: #3dce3d;  
 }
 
 .users-list a .status-dot.offline {
-  color: #ccc;
+  color: #ccc;  
 }
 
-/* Chat Area CSS Start */
+
 .chat-area header{
   display: flex;
   align-items: center;
   padding: 18px 30px;
+  justify-content: space-between; 
 }
-.chat-area header .back-icon{
-  color: #333;
-  font-size: 18px;
+
+.chat-area header .back-icon {
+  margin-right: 15px;
 }
-.chat-area header img{
+
+.chat-area header .content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; 
+}
+
+.chat-area header img {
   height: 45px;
   width: 45px;
-  margin: 0 15px;
+  margin-right: 15px;
 }
+
+.chat-area header .details {
+  margin-right: auto; 
+}
+
+.chat-area header .settings-btn {
+  background-color: transparent !important;
+  color: black !important;
+  border: none !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  font-size: 24px !important;
+  padding: 0 !important;
+  outline: none !important;
+  margin-left: auto !important; 
+  box-shadow: none !important; 
+}
+
+.chat-area header .settings-btn:hover {
+  opacity: 0.7 !important;
+}
+
 .chat-area header .details span{
   font-size: 17px;
   font-weight: 500;
@@ -400,7 +434,7 @@ body{
   color: #4CAF50;
 }
 
-/* Responive media query */
+
 @media screen and (max-width: 450px) {
   .form, .users{
     padding: 20px;
@@ -557,17 +591,17 @@ body{
     flex-direction: column;
 }
 
-/* Dropdown Button */
+
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #1d743700;
+  color: rgb(44, 44, 44);
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
 }
 
-/* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -577,7 +611,7 @@ body{
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -585,20 +619,17 @@ body{
   display: block;
 }
 
-/* Change color of dropdown links on hover */
+
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
 
-/* Modal styles */
+
+
 .modal {
   display: none;
   position: fixed;
@@ -675,4 +706,33 @@ body{
     cursor: pointer;
     font-size: 18px;
 }
+
+
+.create-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.create-group-btn, .upload-files-btn {
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #333;  
+}
+
+.create-group-btn:hover, .upload-files-btn:hover {
+  background-color: #555;  
+}
+
+
+
+
+
+
+
 

@@ -62,7 +62,7 @@ function addMember(userId) {
     if(xhr.readyState === XMLHttpRequest.DONE){
         if(xhr.status === 200){
           let response = xhr.response;
-          console.log("Server response:", response); // Para depuración
+          console.log("Server response:", response);
           if(response === "success"){
             alert("Member added successfully");
             location.reload();

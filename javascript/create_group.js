@@ -13,15 +13,15 @@ continueBtn.onclick = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
               let data = xhr.response;
-              try {
-                  data = JSON.parse(data);
-                  if(data.status === "success"){
-                      location.href = "group_chat.php?room_id=" + data.group_id;
-                  }else{
-                      errorText.style.display = "block";
-                      errorText.textContent = data;
-                  }
-              } catch(e) {
+              if(data === "success"){
+                  errorText.style.display = "block";
+                  errorText.textContent = "Group created successfully!";
+                  errorText.style.color = "#fff";
+                  errorText.style.background = "#28a745";
+                  setTimeout(() => {
+                      location.href = "users.php";
+                  }, 2000);
+              }else{
                   errorText.style.display = "block";
                   errorText.textContent = data;
               }

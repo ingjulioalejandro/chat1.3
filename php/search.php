@@ -14,7 +14,7 @@
         $output .= 'No user found related to your search term';
     }
 
-    // Search for groups
+
     $sql_groups = "SELECT c.* FROM chatrooms c
                    INNER JOIN group_members gm ON c.room_id = gm.group_id
                    WHERE gm.user_id = (SELECT user_id FROM users WHERE unique_id = {$outgoing_id})

@@ -5,7 +5,7 @@ sendBtn = form.querySelector("button"),
 chatBox = document.querySelector(".chat-box"),
 attachmentInput = form.querySelector("#attachment");
 
-// Crea el elemento de vista previa de adjuntos si no existe
+
 let attachmentPreview = document.querySelector(".attachment-preview");
 if (!attachmentPreview) {
     attachmentPreview = document.createElement("div");
